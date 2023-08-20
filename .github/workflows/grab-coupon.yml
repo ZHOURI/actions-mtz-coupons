@@ -33,7 +33,8 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-
+      - name: sync
+        run: npm run sync
       - name: Run app
         run: yarn start
         env:
